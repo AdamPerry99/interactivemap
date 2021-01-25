@@ -1,0 +1,279 @@
+/*Background image to sit behind the main body*/
+      body{
+        background-image: url("https://i.ibb.co/wcVPSKs/schoolmeals.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+/*Title Container*/
+      div.headerContainterPadding{
+        padding-bottom: 15%;
+        padding-top: 15%;
+      }
+      div.headerContainer{
+        background-color: #1F2730;
+        margin:0 auto;
+        width: 60%;
+        padding: 5%;
+      }
+/*Resize for mobile*/
+      @media only screen and (max-width: 800px) {
+        div.headerContainer{
+          width: 85%;
+        }
+      }
+
+/*Social Container*/
+      div.socials{
+          padding-left: 65%;
+          padding-bottom: 40px;
+      }
+/*Position change and alignment for mobile*/
+      @media only screen and (max-width: 800px) {
+        div.socials{
+          padding-bottom: 25px;
+          padding-left: 10%;
+        }
+      }
+
+/*Parent CSS for p tags*/
+      p{
+        font-family: verdana; sans-serif;
+        color: white;
+      }
+/* Css for the individual text types */
+      p.title{
+        font-weight: bold;
+        font-size: 3.5vw;
+        line-height: 1.2em;
+      }
+      p.headerText{
+        font-size: 2.8vw;
+        font-weight: bold;
+        padding-top: 40px;
+      }
+      p.bodyText{
+        text-align: justify;
+        margin:0 auto;
+        width: 75%;
+        font-size: 18px;
+        padding-bottom: 20px;
+        line-height: 1.4em;
+      }
+      p.countyText{
+        font-size: 28px;
+        text-align: center;
+      }
+      p.chartTitle{
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+      }
+      p.chartInfo{
+        font-size: 14px;
+        text-align: right;
+      }
+/*Font resize for mobile*/
+      @media only screen and (max-width: 800px) {
+        p.title{
+          font-size: 24px;
+        }
+        p.headerText{
+          font-size: 22px;
+          padding-top: 10px;
+        }
+        p.bodyText{
+          width: 90%;
+        }
+      }
+
+/*Turns the county blue on hover (click on mobile) so the user can see which county they're hovering over*/
+      path:hover {
+        fill: #3375d6;
+      }
+
+/*Main container for the page*/
+      div.main{
+        background-color: #1F2730;
+        margin:0 auto;
+        width: 80%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        }
+/*Resize for mobile*/
+        @media only screen and (max-width: 800px) {
+          div.main{
+            width: 90%;
+          }
+        }
+
+/*Container for the map, floated right to allow data on the left*/
+        div.map{
+          float: right;
+          width:55%;
+          padding-top: 30px;
+          padding-bottom: 100px;
+
+        }
+/*Tooltip for the county names so the user knows what county they have clicked*/
+        div.countyName{
+          float: right;
+          width:55%;
+          padding-top: 30px;
+        }
+/*Container for the data. floated left ot allow the map on the right*/
+        div.mapInfo{
+          width:40%;
+          margin-left: 5%;
+          font-size: 1.2vw;
+          line-height: 1.4em;
+          padding-top: 30px;
+          padding-bottom: 100px;
+        }
+/*For mmobile these divs are top and bottom rather than side by side, better formatting for the deivice*/
+        @media only screen and (max-width: 800px) {
+          div.map{
+            width: 100%;
+            float: center;
+          }
+          div.countyName{
+            float: center;
+            width: 90%;
+            padding-right: 5%;
+          }
+          div.mapInfo{
+            width: 90%;
+          }
+        }
+
+/*Table for the data when it is loaded*/
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          font-family: verdana; sans-serif;
+          float: left;
+        }
+        th, td {
+          padding: 2px;
+          border: 1px solid white;
+        }
+        th{
+          background-color: #1F2730;
+        }
+        tr{
+          background-color: #1F2730;
+        }
+        @media only screen and (max-width: 800px) {
+          table{
+            font-size: 10px;
+          }
+          th, td {
+            padding: 6px;
+          }
+        }
+/*Container for the table*/
+        .container{
+          color: white;
+        }
+
+/*Container for the tweets*/
+        .TwitterContainer1{
+          margin:0 auto;
+          width: 35%;
+          padding-bottom: 20px;
+        }
+/*Tweet one needs a resize for mobile*/
+        @media only screen and (max-width: 800px) {
+          .TwitterContainer1{
+            width: 85%;
+          }
+        }
+        .TwitterContainer2{
+          margin:0 auto;
+          width: 85%;
+          padding-bottom: 20px;
+        }
+
+
+/*Horizontal line break to divide the sections*/
+        hr{
+          color: white;
+          width: 85%;
+          margin:0 auto;
+        }
+
+/*Pull quote - slightly bigger than the other text to emphasize*/
+        blockquote {
+          text-align: justify;
+          margin:0 auto;
+          width: 65%;
+          font-size: 22px;
+          color: white;
+          padding-bottom: 20px;
+          line-height: 1.4em;
+          padding-top: 30px;
+        }
+/*Float right for the appearance of a pull quote*/
+        blockquote .source{
+          float: right;
+        }
+/*Size format for mobile*/
+        @media only screen and (max-width: 800px) {
+          blockquote{
+            width: 85%;
+            font-size: 18px;
+          }
+        }
+
+/*Map svg*/
+        .c3 svg {
+          font: 16px sans-serif;
+        }
+/*Text resize for mobile*/
+        @media only screen and (max-width: 800px) {
+          .c3 svg{
+            font: 8px sans-serif;
+          }
+        }
+
+/*Axis formatted to white to fit the style of the page*/
+        path.domain {
+          stroke: white;
+        }
+        .c3-axis > .tick{
+          fill:white;
+        }
+
+/*Container for the chart*/
+        .ChartContainer {
+          margin: 0 auto;
+          width: 60%;
+        }
+/*Resize for mobile*/
+        @media only screen and (max-width: 800px) {
+          .ChartContainer{
+            width: 95%;
+          }
+        }
+
+/*Container for the youtube video*/
+        div.videoContainer{
+          margin:0 auto;
+           text-align: center;
+        }
+        /*iframe for the video embed*/
+                iframe{
+                  margin:0 auto;
+                  padding-top: 50px;
+                  width: 600px;
+                  height: 338px;
+                }
+/*Resize for mobile*/
+        @media only screen and (max-width: 800px) {
+          iframe{
+            width: 85%;
+            height: 150px;
+          }
+        }
